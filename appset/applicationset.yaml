@@ -17,7 +17,7 @@ spec:
         harness.io/serviceRef: '{{harness_service}}'
         harness.io/buildRef: '{{image_tag}}'
     spec:
-      project: default
+      project: 863235dc
       source:
         repoURL: https://github.com/crizstian/guestbook-delivery.git
         targetRevision: HEAD
