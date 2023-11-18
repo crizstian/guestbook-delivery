@@ -1,6 +1,6 @@
 {
   "cluster_name" : "se-latam-gitops-qa",
-  "harness_service" : "guest-book",
+  "harness_service" : "guestbook",
   "environment" : "qa",
   "server_address" : "https://104.198.97.183",
   "image_tag" : "1129-6be942f-4"
