@@ -1,6 +1,6 @@
 {
   "cluster_name" : "se-latam-gitops-dev",
-  "harness_service" : "guest-book",
+  "harness_service" : "guestbook",
   "environment" : "dev",
   "server_address" : "https://kubernetes.default.svc",
   "image_tag" : "1129-6be942f-4"
