@@ -1,0 +1,5 @@
+{
+  "harness_service": "guestbook",
+  "environment": "qa",
+  "image_tag": "1159-6be942f-8"
+}
