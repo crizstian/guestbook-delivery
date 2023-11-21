@@ -1,5 +1,6 @@
 {
-  "harness_service" : "guestbook",
-  "environment" : "QA",
-  "image_tag" : "1144-6be942f-2"
+  "harness_service": "guestbook",
+  "environment": "qa",
+  "image_tag": "1159-6be942f-8",
+  "server_address": "https://104.198.97.183"
 }

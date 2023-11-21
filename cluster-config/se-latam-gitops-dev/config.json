@@ -1,5 +1,6 @@
 {
   "harness_service": "guestbook",
   "environment": "dev",
-  "image_tag": "1159-6be942f-8"
+  "image_tag": "1159-6be942f-8",
+  "server_address": ""
 }
