@@ -4,35 +4,35 @@ metadata:
   name: guestbook
 spec:
   generators:
-  - git:
-      repoURL: https://github.com/wings-software/guestbook-delivery.git
-      revision: HEAD
-      files:
-      - path: "cluster-config/**/config.json"
+    - git:
+        repoURL: https://github.com/crizstian/guestbook-delivery.git
+        revision: HEAD
+        files:
+          - path: "cluster-config/**/config.json"
   template:
     metadata:
-      name: '{{cluster_name}}-guestbook'
+      name: "{{cluster_name}}-guestbook"
       labels:
-        harness.io/envRef: '{{environment}}'
-        harness.io/serviceRef: '{{harness_service}}'
-        harness.io/buildRef: '{{image_tag}}'
+        harness.io/envRef: "{{environment}}"
+        harness.io/serviceRef: "{{harness_service}}"
+        harness.io/buildRef: "{{image_tag}}"
     spec:
-      project: 207bda4a
+      project: 4b26d004
       source:
-        repoURL: https://github.com/wings-software/guestbook-delivery.git
+        repoURL: https://github.com/crizstian/guestbook-delivery.git
         targetRevision: HEAD
         path: "base"
         kustomize:
-          namePrefix: '{{environment}}-'
+          namePrefix: "{{environment}}-"
           images:
-          - mansong/guestbook:{{image_tag}}
+            - crizstian/guestbook:{{image_tag}}
       destination:
-        server: '{{server_address}}'
-        namespace: 'guestbook-{{environment}}'
+        server: "{{server_address}}"
+        namespace: "guestbook-{{environment}}"
       syncPolicy:
         automated:
           selfHeal: true
         syncOptions:
-        - PruneLast=true
-        - CreateNamespace=true
-        - ApplyOutOfSyncOnly=true
+          - PruneLast=true
+          - CreateNamespace=true
+          - ApplyOutOfSyncOnly=true

@@ -1,7 +1,0 @@
-{
-  "cluster_name" : "qa-cluster",
-  "harness_service" : "GuestBook_UI",
-  "environment" : "qa",
-  "server_address" : "https://35.224.207.9",
-  "image_tag" : "1115-6be942f-42"
-}

@@ -1,0 +1,7 @@
+{
+  "cluster_name": "gke-qa",
+  "harness_service": "guestbook",
+  "environment": "dev",
+  "server_address": "https://kubernetes.default.svc",
+  "image_tag": "1115-6be942f-42"
+}
